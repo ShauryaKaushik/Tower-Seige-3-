@@ -109,6 +109,6 @@ async function getBackgroundImg(){
         bg = "bg2.jpg";
     }
 
-    backgroundImg = loadImage(bg);
+    BackgroundImg = loadImage(bg);
 
 }
