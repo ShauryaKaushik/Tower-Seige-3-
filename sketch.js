@@ -43,6 +43,10 @@ function setup(){
 
 function draw(){
     
+if(BackgroundImg){
+background(BackgroundImg);	
+ }
+   
 noStroke();
     textSize(35)
     fill("blue")
