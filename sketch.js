@@ -51,6 +51,7 @@ function draw(){
     fill("blue")
     text("Score  " + score, width-300, 250)
     
+    background(BackgroundImg); 	
     Engine.update(engine);
     strokeWeight(4);
     box1.display();
