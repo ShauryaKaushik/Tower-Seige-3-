@@ -43,10 +43,7 @@ function setup(){
 
 function draw(){
     
-    if(BackgroundImg)
-    background(BackgroundImg);
-
-    noStroke();
+noStroke();
     textSize(35)
     fill("blue")
     text("Score  " + score, width-300, 250)
