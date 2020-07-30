@@ -51,7 +51,6 @@ function draw(){
     fill("blue")
     text("Score  " + score, width-300, 250)
     
-    background("white")
     Engine.update(engine);
     strokeWeight(4);
     box1.display();
@@ -102,8 +101,8 @@ async function getBackgroundImg(){
     var datetime = responseJSON.datetime;
     var hour = datetime.slice(11,13);
     
-    if(hour>=0600 && hour<=1900){
-        bg = "bg1.png";
+    if(hour>=06 && hour<=19){
+        bg = "bg.png";
     }
     else{
         bg = "bg2.jpg";
