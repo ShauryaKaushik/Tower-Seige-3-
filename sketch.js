@@ -8,15 +8,7 @@ var box1;
 var platform;
 var bird, slingShot;
 var gameState = "onSling";
-var bg;
 var score = 0;
-var BackgroundImg;
-
-function preload(){
-
-    getBackgroundImg();
-    
-    }
 
 function setup(){
     var canvas = createCanvas(1200,400);
@@ -43,9 +35,7 @@ function setup(){
 
 function draw(){
     
-if(BackgroundImg){
-background(BackgroundImg);	
- }
+background("lightBlue")
    
 noStroke();
     textSize(35)
@@ -103,12 +93,9 @@ async function getBackgroundImg(){
     var hour = datetime.slice(11,13);
     
     if(hour>=06 && hour<=19){
-        bg = "bg.png";
+        background(lightBlue);
     }
     else{
-        bg = "bg2.jpg";
+        background(blue);
     }
-
-    BackgroundImg = loadImage(bg);
-
 }
